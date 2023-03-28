@@ -16,5 +16,6 @@ for hora in 24 48 72 96 120; do
   archivo="$destino/Radiacion_$hora.gif"
 
   # Descargar la imagen de Meteosat utilizando wget
-  wget "https://www.aemet.es/imagenes_d/eltiempo/prediccion/radiacionuv/uvi_PEN_$hora.gif" -O "$archivo"
+  wget "https://www.aemet.es/imagenes_d/eltiempo/prediccion/radiacionuv/uvi_PEN_$hora.gif" -O "$archivo" -a /var/log/radiaciones_$dia.log
 done
+
