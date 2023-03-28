@@ -14,9 +14,9 @@ url4=$"https://www.aemet.es/imagenes_d/eltiempo/prediccion/mapa_frentes/"$fechaA
 url5=$"https://www.aemet.es/imagenes_d/eltiempo/prediccion/mapa_frentes/"$fechaAyer"12+060_ww_g1x0a2c2.gif"
 url6=$"https://www.aemet.es/imagenes_d/eltiempo/prediccion/mapa_frentes/"$fechaAyer"12+072_ww_g1x0a2d3.gif"
 
-wget -O $destino"/1-Frentes-"$hora".gif" $url1
-wget -O $destino"/2-Frentes-"$hora".gif" $url2
-wget -O $destino"/3-Frentes-"$hora".gif" $url3
-wget -O $destino"/4-Frentes-"$hora".gif" $url4
-wget -O $destino"/5-Frentes-"$hora".gif" $url5
-wget -O $destino"/6-Frentes-"$hora".gif" $url6
+wget -O $destino"/1-Frentes-"$hora".gif" $url1 -a /var/log/frentes_$dia.log
+wget -O $destino"/2-Frentes-"$hora".gif" $url2 -a /var/log/frentes_$dia.log
+wget -O $destino"/3-Frentes-"$hora".gif" $url3 -a /var/log/frentes_$dia.log
+wget -O $destino"/4-Frentes-"$hora".gif" $url4 -a /var/log/frentes_$dia.log
+wget -O $destino"/5-Frentes-"$hora".gif" $url5 -a /var/log/frentes_$dia.log
+wget -O $destino"/6-Frentes-"$hora".gif" $url6 -a /var/log/frentes_$dia.log
