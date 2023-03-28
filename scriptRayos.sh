@@ -8,4 +8,4 @@ destino=$"$carpeta/$mes/$dia"
 
 url1=$"https://www.aemet.es/imagenes_d/eltiempo/observacion/rayos/"$fecha"00_r79g.gif"
 
-wget -O $destino"/Rayos-"$hora".gif" $url1
+wget -O $destino"/Rayos-"$hora".gif" $url1 -a /var/log/rayos_$dia.log
