@@ -8,4 +8,4 @@ destino=$"$carpeta/$mes/$dia"
 
 url1=$"https://www.avametnuvol.es/estacions/c31m107e02/polop.jpg"
 
-wget -O $destino"/Polop-"$hora".jpg" $url1
+wget -O $destino"/Polop-"$hora".jpg" $url1 -a /var/log/cams_$dia.log
